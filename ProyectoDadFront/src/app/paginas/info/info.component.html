@@ -1,0 +1,26 @@
+<app-menu></app-menu>
+<app-fondo></app-fondo>
+<p>Nuestro teléfono de contacto es: 12354567</p>
+<br/>
+<br/>
+<p>Disponemos de varios Emails:
+  informaticaSencilla@informatica.es
+  ayudaInformatica@informatica.es
+</p>
+<br/>
+<br/>
+<p class="texto-derecha">horarios:<br/>
+  8-18h l-v<br/>
+  8-14h s<br/>
+  Domingo cerrado
+</p>
+<div *ngFor="let e of empleados" >
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>{{e.nombreempleado}}</mat-card-title>
+      <mat-card-subtitle>{{e.descripcionempleado}}</mat-card-subtitle>
+      <img mat-card-md-image src="../../../assets/img/{{e.imagenempleado}}.jpg" >
+    </mat-card-title-group>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<app-menu-postlogin></app-menu-postlogin>
+<app-fondo-postlogin></app-fondo-postlogin>
+<div *ngFor="let p of productos" >
+    <mat-card>
+      <mat-card-title-group>
+        <mat-card-title>{{p.nombreproducto}}</mat-card-title>
+        <mat-card-subtitle>{{p.descripcionproducto}}</mat-card-subtitle>
+        <img mat-card-md-image src="../../../assets/img/{{p.imagenproducto}}.png" >
+      </mat-card-title-group>
+      <button>Ver mas</button>
+    </mat-card>
+  </div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,24 @@
+<app-menu></app-menu>
+<app-fondo></app-fondo>
+<p> Solicitar asistencia</p>
+<form (ngSubmit)="submit()">
+    <div class="formDiv">
+        <label for="nombre">Nombre:</label><br/>
+        <input type="text"  name="text" required />
+       
+    </div>
+    <div class="formDiv">
+        <label for="Telefono">Telefono:</label><br/>
+        <input type="number" name="Telefono" required />
+    </div>
+    <div class="formDiv">
+        <label for="Problema">Problema:</label><br/>
+        <input type="Text" name="Problema" required />
+    </div>
+
+    <button type="submit" class="button1">
+        Enviar
+    </button>
+
+</form>
+<router-outlet></router-outlet>
