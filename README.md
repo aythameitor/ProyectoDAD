@@ -1,7 +1,7 @@
 # ProyectoDAD
 
 # Base de datos
-La base de datos se llama dad_prueba, hay que recordar que MySQL usa el puerto por defecto 3306
+La base de datos se llama dad_prueba, debemos instalarla antes de proceder, hay que recordar que MySQL usa el puerto por defecto 3306
 # Backend
 El backend de mi app usa un servicio RESTful, además de Spring boot, por defecto el puerto usado es el 8080, tras descargar la carpeta de backend, desde tu pc debes modificar el application.properties y dejar la conexion y el usuario que tengas en MySQL
 # Frontend
